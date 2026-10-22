@@ -1,0 +1,24 @@
+# Raw and intermediate data are not versioned - rebuild from sources.yaml
+*/data/raw/*
+*/data/interim/*
+!*/data/raw/.gitkeep
+!*/data/interim/.gitkeep
+
+# PDFs are copyrighted - keep local only
+*/literature/pdfs/*
+!*/literature/pdfs/.gitkeep
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS
+.DS_Store
